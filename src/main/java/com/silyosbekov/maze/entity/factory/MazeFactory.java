@@ -5,6 +5,10 @@ import com.silyosbekov.maze.core.GameManager;
 import com.silyosbekov.maze.entity.Maze;
 import com.silyosbekov.maze.entity.MazeCell;
 
+/**
+ * Factory for creating a maze.
+ * The maze is created cell by cell with walls and coins.
+ */
 public class MazeFactory {
     private final WallFactory wallFactory = new WallFactory();
     private final CoinFactory coinFactory = new CoinFactory();

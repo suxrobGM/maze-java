@@ -3,7 +3,7 @@ package com.silyosbekov.maze.entity;
 import com.silyosbekov.maze.core.Direction;
 
 /**
- * Represents a cell in the maze
+ * Represents a cell in the maze.
  */
 public class MazeCell {
     private final int x;

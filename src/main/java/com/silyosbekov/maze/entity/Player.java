@@ -9,6 +9,10 @@ import com.almasb.fxgl.physics.box2d.dynamics.BodyType;
 import com.silyosbekov.maze.core.Direction;
 import javafx.scene.input.KeyCode;
 
+/**
+ * Player game object. It has health and physics components.
+ * It can move in 4 directions.
+ */
 public class Player {
     private final Entity entity;
     private final HealthIntComponent health;
@@ -34,6 +38,11 @@ public class Player {
         return health;
     }
 
+    /**
+     * Move player in a given direction.
+     * The movement speed is 75 pixels per second.
+     * @param direction - direction to move
+     */
     public void move(Direction direction) {
         double moveSpeed = 75;
 
@@ -53,10 +62,20 @@ public class Player {
         }
     }
 
+    /**
+     * Stop player movement.
+     */
     public void stop() {
         physics.setLinearVelocity(0, 0);
     }
 
+    /**
+     * Enable input actions for player movement.
+     * W - move up
+     * A - move left
+     * S - move down
+     * D - move right
+     */
     public void enableInputActions() {
         var input = FXGL.getInput();
 

@@ -13,9 +13,16 @@ import com.silyosbekov.maze.entity.factory.PlayerFactory;
 import javafx.scene.paint.Color;
 import java.util.Arrays;
 
+/**
+ * The main class for the Maze Game application.
+ */
 public class MazeGameApp extends GameApplication {
     private final MazeFactory mazeFactory = new MazeFactory();
     private final PlayerFactory playerFactory = new PlayerFactory();
+
+    public static void main(String[] args) {
+        launch(args);
+    }
 
     @Override
     protected void initSettings(GameSettings settings) {
@@ -33,7 +40,7 @@ public class MazeGameApp extends GameApplication {
 
     @Override
     protected void initGame() {
-        clearGameState(); // Clear existing game state
+        dispose(); // Clear existing game state
 
         var player = playerFactory.createPlayer(100, 200);
         player.enableInputActions();
@@ -56,14 +63,13 @@ public class MazeGameApp extends GameApplication {
         physicsWorld.addCollisionHandler(new PlayerCoinCollisionHandler());
     }
 
-    private void clearGameState() {
+    /**
+     * Dispose of the current game state by removing all entities and clearing input,
+     * then reset the game manager.
+     */
+    private void dispose() {
         FXGL.getGameWorld().getEntitiesCopy().forEach(Entity::removeFromWorld);
         FXGL.getInput().clearAll();
         GameManager.reset();
-    }
-
-
-    public static void main(String[] args) {
-        launch(args);
     }
 }
