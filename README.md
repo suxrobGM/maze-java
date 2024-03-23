@@ -55,5 +55,5 @@ Reflecting on this journey, I'm amazed at how much I was able to learn in such a
 
 
 ## Sample Screenshots
-![Screenshot](./assets/screenshot-1.jpg)
-![Screenshot](./assets/screenshot-2.jpg)
+![Screenshot](./screenshots/game-1.jpg)
+![Screenshot](./screenshots/game-2.jpg)
