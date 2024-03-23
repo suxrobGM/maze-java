@@ -25,17 +25,17 @@ This project uses the Gradle build system. To run the game, follow these steps:
 1. Navigate to the project's root directory.
 2. Run the game using the Gradle wrapper:
 
-For Windows:
-
-```shell
-.\gradlew run
-```
-
-For macOS/Linux:
-
-```shell
-./gradlew run
-```
+    For Windows:
+    
+    ```shell
+    .\gradlew run
+    ```
+    
+    For macOS/Linux:
+    
+    ```shell
+    ./gradlew run
+    ```
 
 ## Reflection
 
