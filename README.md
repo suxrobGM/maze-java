@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a simple maze game project that built using the JavaFX with the FXGL game library. Players navigate through a dynamically generated maze and collecting coins. The game features an intuitive control scheme, a timer to track how quickly the maze is completed, and a scoring system to enhance the gameplay experience.
+This is a simple maze game project that built using the JavaFX with the FXGL game library. Players navigate through a dynamically generated maze and collect coins. The game features an intuitive control scheme, a timer to track how quickly the maze is completed, and a scoring system to enhance the gameplay experience.
 
 ## How to Play
 
