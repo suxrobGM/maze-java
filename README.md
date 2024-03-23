@@ -52,3 +52,8 @@ Up until this point, my experience with Java was limited to academic projects, w
 Working on this maze game not only expanded my understanding of Java but also introduced me to the robust capabilities of FXGL. 
 The project was a whirlwind of learning and creativity, blending my existing knowledge with new challenges and requiring me to adapt and grow. 
 Reflecting on this journey, I'm amazed at how much I was able to learn in such a short period.
+
+
+## Sample Screenshots
+![Screenshot](./assets/screenshot-1.jpg)
+![Screenshot](./assets/screenshot-2.jpg)

@@ -50,7 +50,7 @@ public class MazeGameApp extends GameApplication {
 
     @Override
     protected void initUI() {
-        var scoreLabel = FXGL.addText("Score:", 10, 25);
+        var scoreLabel = FXGL.addText("Score: 0", 10, 25);
         scoreLabel.setFill(Color.RED);
 
         GameManager.onScoreChanged((value) -> scoreLabel.setText("Score: %d".formatted(value)));
